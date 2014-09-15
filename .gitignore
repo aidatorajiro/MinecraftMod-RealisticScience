@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /.DS_Store
 /.metadata/
 /forge-1.6.4-9.11.1.964-changelog.txt
@@ -12,3 +13,17 @@
 /bin/
 /build/
 /eclipse/
+=======
+*.class
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+>>>>>>> 147efb858b90ade5e8c3e817cb61c589cbb7b389
