@@ -3,4 +3,6 @@ MinecraftMod-RealisticScience
 
 つくってみた。ただそれだけ。
 
-youtubeにデモのせるかも
+youtubeのデモ：
+
+https://www.youtube.com/watch?v=kahAJgGz4Cs
