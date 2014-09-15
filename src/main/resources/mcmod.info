@@ -1,0 +1,16 @@
+[
+{
+  "modid": "RealisticScience",
+  "name": "RealisticScience",
+  "description": "It is VERY Realistic Mod.",
+  "version": "0.0.0",
+  "mcversion": "1.6.4-Forge964",
+  "url": "",
+  "updateUrl": "",
+  "authors": ["Torajiro"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
