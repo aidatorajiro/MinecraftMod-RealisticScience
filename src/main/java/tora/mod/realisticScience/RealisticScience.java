@@ -1,7 +1,5 @@
 package tora.mod.realisticScience;
 
-import java.util.Random;
-
 import net.minecraft.block.Block;
 import net.minecraft.block.StepSound;
 import net.minecraft.block.material.Material;
@@ -56,6 +54,7 @@ public class RealisticScience {
 				}
 			}
 		};
+		oreSmelting.dropItemQuantity = 0;
 	}
 	
 	@EventHandler
