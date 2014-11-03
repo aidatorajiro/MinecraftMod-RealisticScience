@@ -5,7 +5,7 @@ MinecraftMod-RealisticScience
 
 youtubeDemo : 
 
-ver0.0.0 : <br>
+Release 0.0.0 : <br>
 https://www.youtube.com/watch?v=kahAJgGz4Cs
 
 howToBuild
