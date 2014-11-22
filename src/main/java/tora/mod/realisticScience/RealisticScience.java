@@ -1,5 +1,6 @@
 package tora.mod.realisticScience;
 
+import tora.mod.realisticScience.ores.OreSmelting;
 import net.minecraft.block.Block;
 import net.minecraft.block.StepSound;
 import net.minecraft.block.material.Material;
@@ -31,30 +32,23 @@ public class RealisticScience {
 	
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
-		//===== oreSmelting =====
-		RealisticScienceBlock oreSmelting = new RealisticScienceBlock(
-		999, Material.rock,                       //id, material
-		"oreSmelting", CreativeTabs.tabAllSearch, //name, creativetabs
-		1F, 1F, Block.soundStoneFootstep,         //hardness, resistance, footstep
-		"realisticscience:oresmelting",           //texturename
-		"pickaxe", 0                              //tool, toollevel
-		) {
-			@Override
-			public void onBlockDestroyedByExplosion(World par1World, int par2, int par3, int par4, Explosion par5Explosion) {
-				if (!par1World.isRemote) {
-					par1World.createExplosion(null, (double)par2, (double)par3, (double)par4, 2F, true);
-					par1World.setBlock(par2, par3, par4, lavaMoving.blockID);
-				}
-			}
-			
-			@Override
-			public void onBlockDestroyedByPlayer(World par1World, int par2, int par3, int par4, int par5) {
-				if (!par1World.isRemote) {
-					onBlockDestroyedByExplosion(par1World, par2, par3, par4, null);
-				}
-			}
-		};
-		oreSmelting.dropItemQuantity = 0;
+		//====================================//
+		//          Ores - Overworld          //
+		//====================================//
+		
+		OreSmelting oreSmelting = new OreSmelting(1000);
+		
+		//====================================//
+		//          Machines - Pipes          //
+		//====================================//
+		
+		//----- Pipe -----
+		
+		//----- PiCharm -----
+		
+		//----- Pipe on Rails -----
+		
+		//----- NetBeams -----
 	}
 	
 	@EventHandler
