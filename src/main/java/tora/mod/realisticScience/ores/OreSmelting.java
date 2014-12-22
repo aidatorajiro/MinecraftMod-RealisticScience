@@ -12,7 +12,7 @@ import net.minecraftforge.common.MinecraftForge;
 import tora.mod.realisticScience.RealisticScienceOre;
 
 public class OreSmelting extends RealisticScienceOre {
-
+	
 	public OreSmelting(int id) {
 		super(id, Material.rock);
 		setUnlocalizedName("oreSmelting");

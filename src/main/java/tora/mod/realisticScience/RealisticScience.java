@@ -52,6 +52,12 @@ public class RealisticScience {
 	}
 	
 	@EventHandler
+	public void init(FMLInitializationEvent event)
+	{
+		
+	}
+	
+	@EventHandler
 	public void load(FMLInitializationEvent event) {
 		proxy.registerRenderers();
 	}
