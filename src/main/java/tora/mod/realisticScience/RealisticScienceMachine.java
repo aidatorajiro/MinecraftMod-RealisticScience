@@ -7,7 +7,6 @@ import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.World;
 
 public class RealisticScienceMachine extends BlockContainer {
-	//Define the constructor.
 	public RealisticScienceMachine (int id, Material material) {
 		super(id, material);
 	}

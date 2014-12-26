@@ -1,6 +1,8 @@
 package tora.mod.realisticScience;
 
+import tora.mod.realisticScience.machines.PipeBasic;
 import tora.mod.realisticScience.ores.OreSmelting;
+import tora.mod.realisticScience.tileentities.TileentityPipeBasic;
 import net.minecraft.block.Block;
 import net.minecraft.block.StepSound;
 import net.minecraft.block.material.Material;
@@ -30,19 +32,23 @@ public class RealisticScience {
 	@SidedProxy(clientSide="tora.mod.realisticScience.client.ClientProxy", serverSide="tora.mod.realisticScience.CommonProxy")
 	public static CommonProxy proxy;
 	
+	public static OreSmelting oreSmelting;
+	public static PipeBasic pipeBasic;
+	
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
 		//====================================//
 		//          Ores - Overworld          //
 		//====================================//
 		
-		OreSmelting oreSmelting = new OreSmelting(1000);
+		oreSmelting = new OreSmelting(1000);
 		
 		//====================================//
 		//          Machines - Pipes          //
 		//====================================//
 		
 		//----- Pipe -----
+		pipeBasic = new PipeBasic(1001);
 		
 		//----- PiCharm -----
 		
@@ -52,9 +58,9 @@ public class RealisticScience {
 	}
 	
 	@EventHandler
-	public void init(FMLInitializationEvent event)
-	{
-		
+	public void init(FMLInitializationEvent event) {
+		GameRegistry.registerTileEntity(RealisticScienceTileentity.class, "realisticScienceTileentity");
+		GameRegistry.registerTileEntity(TileentityPipeBasic.class, "tileentityPipeBasic");
 	}
 	
 	@EventHandler
@@ -64,5 +70,6 @@ public class RealisticScience {
         
 	@EventHandler
 	public void postInit(FMLPostInitializationEvent event) {
+		
 	}
 }
