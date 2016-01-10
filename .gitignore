@@ -5,4 +5,6 @@
 /.gradle/
 /bin/
 /build/
+/run/
 /eclipse/
+/*.launch
