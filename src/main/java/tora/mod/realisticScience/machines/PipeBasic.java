@@ -10,9 +10,7 @@ import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.BlockPos;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.world.World;
-import net.minecraftforge.common.MinecraftForge;
 import tora.mod.realisticScience.RealisticScienceMachine;
-import tora.mod.realisticScience.RealisticScienceTileentity;
 import tora.mod.realisticScience.tileentities.TileentityPipeBasic;
 
 public class PipeBasic extends RealisticScienceMachine {
@@ -23,15 +21,14 @@ public class PipeBasic extends RealisticScienceMachine {
 		setHardness       (1F);
 		setResistance     (1F);
 		setStepSound      (Block.soundTypeStone);
-		setHarvestLevel("pickaxe", 0);
+		setHarvestLevel   ("pickaxe", 0);
 		
 		GameRegistry.registerBlock(this, "pipeBasic");
 	}
 	
 	@Override
 	public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumFacing side, float hitX, float hitY, float hitZ) {
-		
-		return true;
+		return false;
 	}
 	
 	@Override
